@@ -10,6 +10,8 @@
 - Deutsche modulare [Architekturbaseline](docs/ARCHITEKTUR.md) für Chess Core, UCI, Match-Controller, PGN/Datasets und KI-Training.
 - Dokumentationspaket: [Roadmap](ROADMAP.md), [Agentenregeln](AGENTS.md), [Lastenheft](docs/LASTENHEFT.md), [Pflichtenheft](docs/PFLICHTENHEFT.md), [Testkonzept](docs/TESTKONZEPT.md), [Protokolle](docs/PROTOKOLLE.md), [Training](docs/TRAINING.md), [Datenquellen](docs/DATENQUELLEN.md), [ADR-Index](docs/adr/README.md), Beitragshinweise und Security-Policy.
 - PGN-Import-Anforderung in [Issue #1](https://github.com/Robin-Goerlach/SASD-AI-Chess/issues/1) erfasst.
+- Ausführliche projektweite [README.md](README.md) mit Systemüberblick, UCI-/PGN-/KI-Konzepten, geplantem Buildablauf und ausdrücklich gekennzeichnetem Implementierungsstand.
+- Eine in die README eingebettete, skalierbare SVG-Konzeptgrafik der zukünftigen Desktop-Oberfläche unter `docs/images/sasd-ai-chess-ui-concept.svg`.
 
 ### Not yet implemented
 

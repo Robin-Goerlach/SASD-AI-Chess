@@ -1,0 +1,312 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc"><title id="title">SASD-AI-Chess – Desktop UI concept</title><desc id="desc">Illustrative dark desktop interface with chess board, UCI engine selection, position evaluation, PGN management, move list, evaluation curve, and future machine-learning tools. Concept only, not functional software.</desc><defs><linearGradient id="header" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#142337"/><stop offset="1" stop-color="#0b1520"/></linearGradient><linearGradient id="panel" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#142234"/><stop offset="1" stop-color="#0d1724"/></linearGradient><linearGradient id="accent" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#398dff"/><stop offset="1" stop-color="#1161c8"/></linearGradient><linearGradient id="boardFrame" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#583923"/><stop offset="1" stop-color="#261b14"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity=".4"/></filter></defs>
+<rect x="0" y="0" width="1536" height="1024" rx="0" fill="#0a111b" />
+<rect x="0" y="0" width="1536" height="100" rx="0" fill="url(#header)" />
+<line x1="0" y1="100" x2="1536" y2="100" stroke="#203346" stroke-width="1"/>
+<text x="26" y="65" fill="#dbe8fb" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="69" font-weight="400" text-anchor="start">♞</text>
+<text x="104" y="50" fill="#f5f9ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="750" text-anchor="start">SASD-AI-Chess</text>
+<text x="105" y="77" fill="#55aeff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" text-anchor="start">Play  ·  Analyze  ·  Train  ·  Improve</text>
+<rect x="360" y="13" width="125" height="74" rx="6" fill="url(#accent)" stroke="#3e93ff" stroke-width="1"/>
+<text x="422" y="42" fill="#fff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="600" text-anchor="middle">▶</text>
+<text x="422" y="72" fill="#fff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="500" text-anchor="middle">Play</text>
+<rect x="490" y="13" width="125" height="74" rx="6" fill="#101d2b" stroke="#203449" stroke-width="1"/>
+<text x="552" y="42" fill="#c4d3e7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="600" text-anchor="middle">◫</text>
+<text x="552" y="72" fill="#d1dcea" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="500" text-anchor="middle">Analysis</text>
+<rect x="620" y="13" width="125" height="74" rx="6" fill="#101d2b" stroke="#203449" stroke-width="1"/>
+<text x="682" y="42" fill="#c4d3e7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="600" text-anchor="middle">▦</text>
+<text x="682" y="72" fill="#d1dcea" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="500" text-anchor="middle">Games</text>
+<rect x="750" y="13" width="125" height="74" rx="6" fill="#101d2b" stroke="#203449" stroke-width="1"/>
+<text x="812" y="42" fill="#c4d3e7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="600" text-anchor="middle">♜</text>
+<text x="812" y="72" fill="#d1dcea" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="500" text-anchor="middle">Training</text>
+<rect x="880" y="13" width="125" height="74" rx="6" fill="#101d2b" stroke="#203449" stroke-width="1"/>
+<text x="942" y="42" fill="#c4d3e7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="600" text-anchor="middle">▥</text>
+<text x="942" y="72" fill="#d1dcea" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="500" text-anchor="middle">Engines</text>
+<rect x="1010" y="13" width="125" height="74" rx="6" fill="#101d2b" stroke="#203449" stroke-width="1"/>
+<text x="1072" y="42" fill="#c4d3e7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="600" text-anchor="middle">⚙</text>
+<text x="1072" y="72" fill="#d1dcea" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="500" text-anchor="middle">Settings</text>
+<text x="1478" y="29" fill="#d0d6e3" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">□</text>
+<text x="1510" y="29" fill="#d0d6e3" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start">×</text>
+<rect x="18" y="112" width="338" height="485" rx="7" fill="url(#panel)" stroke="#27394c" stroke-width="1"/>
+<text x="33" y="140" fill="#f6f8ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">Game Setup</text>
+<text x="340" y="139" fill="#7f99b6" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="400" text-anchor="end">UCI match</text>
+<line x1="19" y1="154" x2="355" y2="154" stroke="#26384b" stroke-width="1"/>
+<text x="35" y="181" fill="#95adc7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="700" text-anchor="start">WHITE ENGINE</text>
+<rect x="35" y="195" width="302" height="45" rx="6" fill="#18283b" stroke="#334a60" stroke-width="1"/>
+<text x="49" y="224" fill="#f6f4e9" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="400" text-anchor="start">♘</text>
+<text x="91" y="223" fill="#f4f7fa" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="600" text-anchor="start">SASD-AI-Chess</text>
+<text x="321" y="224" fill="#cbd9ed" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="600" text-anchor="end">⌄</text>
+<text x="35" y="266" fill="#a5bad2" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start">Strength</text>
+<rect x="119" y="248" width="218" height="37" rx="5" fill="#17283a" stroke="#34485e" stroke-width="1"/>
+<text x="135" y="272" fill="#e4edfa" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start">Default</text>
+<text x="316" y="273" fill="#b7c9dc" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" text-anchor="start">⌄</text>
+<text x="35" y="324" fill="#95adc7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="700" text-anchor="start">BLACK ENGINE</text>
+<rect x="35" y="337" width="302" height="45" rx="6" fill="#18283b" stroke="#334a60" stroke-width="1"/>
+<text x="47" y="367" fill="#b7daba" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" text-anchor="start">♟</text>
+<text x="91" y="366" fill="#f4f7fa" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="600" text-anchor="start">Stockfish (example)</text>
+<text x="321" y="367" fill="#cbd9ed" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="600" text-anchor="end">⌄</text>
+<text x="35" y="404" fill="#a5bad2" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start">Strength</text>
+<rect x="119" y="387" width="218" height="37" rx="5" fill="#17283a" stroke="#34485e" stroke-width="1"/>
+<text x="135" y="411" fill="#e4edfa" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start">Default</text>
+<text x="316" y="412" fill="#b7c9dc" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" text-anchor="start">⌄</text>
+<text x="35" y="456" fill="#e8effa" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="600" text-anchor="start">◷  Time Control</text>
+<rect x="35" y="473" width="302" height="45" rx="6" fill="#1a2c40" stroke="#34485e" stroke-width="1"/>
+<text x="51" y="501" fill="#dfe9f9" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">10 min + 5 sec</text>
+<text x="322" y="502" fill="#c6d7ed" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="600" text-anchor="end">⌄</text>
+<rect x="35" y="533" width="302" height="49" rx="6" fill="url(#accent)" />
+<text x="186" y="564" fill="#ffffff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="650" text-anchor="middle">▶   Start Game</text>
+<rect x="18" y="608" width="338" height="368" rx="7" fill="url(#panel)" stroke="#27394c" stroke-width="1"/>
+<text x="33" y="636" fill="#f6f8ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">Game Management</text>
+<line x1="19" y1="650" x2="355" y2="650" stroke="#26384b" stroke-width="1"/>
+<text x="37" y="673" fill="#d5e1f4" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start">✚</text>
+<text x="79" y="673" fill="#dee9f7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">New Game</text>
+<line x1="38" y1="685" x2="338" y2="685" stroke="#192b3e" stroke-width="1"/>
+<text x="37" y="711" fill="#d5e1f4" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start">◩</text>
+<text x="79" y="711" fill="#dee9f7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Load PGN…</text>
+<line x1="38" y1="723" x2="338" y2="723" stroke="#192b3e" stroke-width="1"/>
+<text x="37" y="749" fill="#d5e1f4" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start">▣</text>
+<text x="79" y="749" fill="#dee9f7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Save Game…</text>
+<line x1="38" y1="761" x2="338" y2="761" stroke="#192b3e" stroke-width="1"/>
+<text x="37" y="787" fill="#d5e1f4" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start">⇩</text>
+<text x="79" y="787" fill="#dee9f7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Export PGN…</text>
+<line x1="38" y1="799" x2="338" y2="799" stroke="#192b3e" stroke-width="1"/>
+<text x="37" y="825" fill="#d5e1f4" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start">⇄</text>
+<text x="79" y="825" fill="#dee9f7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Flip Board</text>
+<line x1="38" y1="837" x2="338" y2="837" stroke="#192b3e" stroke-width="1"/>
+<text x="37" y="863" fill="#d5e1f4" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start">♙</text>
+<text x="79" y="863" fill="#dee9f7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Board Theme: Wood</text>
+<line x1="38" y1="875" x2="338" y2="875" stroke="#192b3e" stroke-width="1"/>
+<text x="37" y="901" fill="#55abfa" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start">☑</text>
+<text x="79" y="901" fill="#dee9f7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Show Coordinates</text>
+<line x1="38" y1="913" x2="338" y2="913" stroke="#192b3e" stroke-width="1"/>
+<text x="37" y="939" fill="#55abfa" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start">☑</text>
+<text x="79" y="939" fill="#dee9f7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Highlight Last Move</text>
+<rect x="375" y="112" width="619" height="628" rx="6" fill="url(#boardFrame)" stroke="#533620" stroke-width="1"/>
+<rect x="389" y="121" width="592" height="606" rx="3" fill="#211911" />
+<rect x="404" y="136" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="474" y="136" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="544" y="136" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="614" y="136" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="684" y="136" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="754" y="136" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="824" y="136" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="824" y="136" width="70" height="70" rx="0" fill="#539cf4" stroke="#347fde" stroke-width="2"/>
+<rect x="894" y="136" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="404" y="206" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="474" y="206" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="544" y="206" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="614" y="206" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="684" y="206" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="754" y="206" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="824" y="206" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="894" y="206" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="404" y="276" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="474" y="276" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="544" y="276" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="614" y="276" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="684" y="276" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="754" y="276" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="754" y="276" width="70" height="70" rx="0" fill="#539cf4" stroke="#347fde" stroke-width="2"/>
+<rect x="824" y="276" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="894" y="276" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="404" y="346" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="474" y="346" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="544" y="346" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="614" y="346" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="684" y="346" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="754" y="346" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="824" y="346" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="894" y="346" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="404" y="416" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="474" y="416" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="544" y="416" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="614" y="416" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="684" y="416" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="684" y="416" width="70" height="70" rx="0" fill="#ebcb63" stroke="#e0b941" stroke-width="2"/>
+<rect x="754" y="416" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="824" y="416" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="894" y="416" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="404" y="486" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="474" y="486" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="544" y="486" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="614" y="486" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="684" y="486" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="754" y="486" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="824" y="486" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="894" y="486" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="404" y="556" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="474" y="556" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="544" y="556" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="614" y="556" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="684" y="556" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="754" y="556" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="824" y="556" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="894" y="556" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="404" y="626" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="474" y="626" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="544" y="626" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="614" y="626" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="684" y="626" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="754" y="626" width="70" height="70" rx="0" fill="#ead3a7" />
+<rect x="824" y="626" width="70" height="70" rx="0" fill="#ab7b4d" />
+<rect x="894" y="626" width="70" height="70" rx="0" fill="#ead3a7" />
+<text x="439" y="186.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♜</text>
+<text x="579" y="186.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♝</text>
+<text x="649" y="186.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♛</text>
+<text x="719" y="186.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♚</text>
+<text x="789" y="186.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♝</text>
+<text x="929" y="186.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♜</text>
+<text x="439" y="256.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♟</text>
+<text x="509" y="256.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♟</text>
+<text x="579" y="256.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♟</text>
+<text x="649" y="256.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♟</text>
+<text x="789" y="256.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♟</text>
+<text x="859" y="256.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♟</text>
+<text x="929" y="256.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♟</text>
+<text x="579" y="326.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♞</text>
+<text x="789" y="326.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♞</text>
+<text x="719" y="396.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#0d1217" stroke="#d5c5a9" stroke-width="0.8" paint-order="stroke">♟</text>
+<text x="579" y="466.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♗</text>
+<text x="719" y="466.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♙</text>
+<text x="789" y="536.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♘</text>
+<text x="439" y="606.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♙</text>
+<text x="509" y="606.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♙</text>
+<text x="579" y="606.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♙</text>
+<text x="649" y="606.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♙</text>
+<text x="789" y="606.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♙</text>
+<text x="859" y="606.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♙</text>
+<text x="929" y="606.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♙</text>
+<text x="439" y="676.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♖</text>
+<text x="509" y="676.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♘</text>
+<text x="579" y="676.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♗</text>
+<text x="649" y="676.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♕</text>
+<text x="719" y="676.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♔</text>
+<text x="929" y="676.4" text-anchor="middle" font-size="56" font-family="DejaVu Sans,Segoe UI Symbol,Arial Unicode MS,serif" font-weight="500" fill="#fff8e9" stroke="#161b21" stroke-width="1.6" paint-order="stroke">♖</text>
+<text x="395" y="178" fill="#e6cfb0" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">8</text>
+<text x="395" y="248" fill="#e6cfb0" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">7</text>
+<text x="395" y="318" fill="#e6cfb0" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">6</text>
+<text x="395" y="388" fill="#e6cfb0" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">5</text>
+<text x="395" y="458" fill="#e6cfb0" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">4</text>
+<text x="395" y="528" fill="#e6cfb0" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">3</text>
+<text x="395" y="598" fill="#e6cfb0" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">2</text>
+<text x="395" y="668" fill="#e6cfb0" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">1</text>
+<text x="439" y="716" fill="#e8cba5" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">a</text>
+<text x="509" y="716" fill="#e8cba5" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">b</text>
+<text x="579" y="716" fill="#e8cba5" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">c</text>
+<text x="649" y="716" fill="#e8cba5" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">d</text>
+<text x="719" y="716" fill="#e8cba5" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">e</text>
+<text x="789" y="716" fill="#e8cba5" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">f</text>
+<text x="859" y="716" fill="#e8cba5" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">g</text>
+<text x="929" y="716" fill="#e8cba5" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle">h</text>
+<text x="405" y="732" fill="#bca68d" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="400" text-anchor="start">Italian Game  ·  1. e4 e5  2. Nf3 Nc6  3. Bc4 Nf6</text>
+<rect x="1016" y="112" width="502" height="378" rx="7" fill="url(#panel)" stroke="#27394c" stroke-width="1"/>
+<text x="1031" y="140" fill="#f6f8ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">Engine Analysis</text>
+<text x="1502" y="139" fill="#7f99b6" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="400" text-anchor="end">ILLUSTRATIVE DATA</text>
+<line x1="1017" y1="154" x2="1517" y2="154" stroke="#26384b" stroke-width="1"/>
+<text x="1032" y="182" fill="#d8e3f1" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Depth 22/32    Nodes 12.4 MN    NPS 4.8 MN/s</text>
+<rect x="1032" y="200" width="116" height="69" rx="7" fill="#23364a" />
+<text x="1090" y="247" fill="#f6f8ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="750" text-anchor="middle">+0.32</text>
+<text x="1162" y="223" fill="#dde9f8" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="600" text-anchor="start">White slightly better</text>
+<rect x="1162" y="240" width="335" height="17" rx="5" fill="#304255" />
+<rect x="1162" y="240" width="191" height="17" rx="5" fill="#f0f2f4" />
+<text x="1033" y="313" fill="#93adc9" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="start">MOVE</text>
+<text x="1224" y="313" fill="#93adc9" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="start">EVAL</text>
+<text x="1340" y="313" fill="#93adc9" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="start">WIN %</text>
+<text x="1441" y="313" fill="#93adc9" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="start">NODES</text>
+<rect x="1025" y="323" width="484" height="30" rx="4" fill="#1668c8" />
+<text x="1037" y="344" fill="#eef4ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="700" text-anchor="start">4. d3</text>
+<text x="1224" y="344" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">+0.32</text>
+<text x="1340" y="344" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">35%</text>
+<text x="1441" y="344" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">120k</text>
+<text x="1037" y="377" fill="#eef4ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">4. d4</text>
+<text x="1224" y="377" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">+0.29</text>
+<text x="1340" y="377" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">33%</text>
+<text x="1441" y="377" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">98k</text>
+<text x="1037" y="410" fill="#eef4ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">4. O-O</text>
+<text x="1224" y="410" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">+0.24</text>
+<text x="1340" y="410" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">31%</text>
+<text x="1441" y="410" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">75k</text>
+<text x="1037" y="443" fill="#eef4ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">4. Nc3</text>
+<text x="1224" y="443" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">+0.21</text>
+<text x="1340" y="443" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">30%</text>
+<text x="1441" y="443" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">52k</text>
+<text x="1037" y="476" fill="#eef4ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">4. Ng5</text>
+<text x="1224" y="476" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">+0.17</text>
+<text x="1340" y="476" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">28%</text>
+<text x="1441" y="476" fill="#e1edff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">48k</text>
+<rect x="1016" y="501" width="502" height="90" rx="7" fill="url(#panel)" stroke="#27394c" stroke-width="1"/>
+<text x="1031" y="529" fill="#f6f8ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">Principal Variation</text>
+<line x1="1017" y1="543" x2="1517" y2="543" stroke="#26384b" stroke-width="1"/>
+<text x="1033" y="565" fill="#e6edf8" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" text-anchor="start">4. d3 Bc5  5. O-O d6  6. c3 O-O</text>
+<rect x="1016" y="603" width="502" height="138" rx="7" fill="url(#panel)" stroke="#27394c" stroke-width="1"/>
+<text x="1031" y="631" fill="#f6f8ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">Engine Log</text>
+<text x="1502" y="630" fill="#7f99b6" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="400" text-anchor="end">MOCK OUTPUT</text>
+<line x1="1017" y1="645" x2="1517" y2="645" stroke="#26384b" stroke-width="1"/>
+<rect x="1028" y="654" width="480" height="77" rx="4" fill="#080e16" stroke="#2b3e51" stroke-width="1"/>
+<text x="1040" y="677" fill="#aac2d7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="400" text-anchor="start">info depth 20 score cp 30 nodes 842315</text>
+<text x="1040" y="699" fill="#aac2d7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="400" text-anchor="start">info depth 21 score cp 31 nodes 1034216</text>
+<text x="1040" y="721" fill="#aac2d7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="400" text-anchor="start">info depth 22 score cp 32 nodes 1243156</text>
+<rect x="375" y="753" width="297" height="230" rx="7" fill="url(#panel)" stroke="#27394c" stroke-width="1"/>
+<text x="390" y="781" fill="#f6f8ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">Move List</text>
+<line x1="376" y1="795" x2="671" y2="795" stroke="#26384b" stroke-width="1"/>
+<text x="390" y="816" fill="#a0b5ca" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">1.</text>
+<text x="448" y="816" fill="#eff5ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">e4</text>
+<text x="559" y="816" fill="#eff5ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">e5</text>
+<text x="390" y="856" fill="#a0b5ca" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">2.</text>
+<text x="448" y="856" fill="#eff5ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Nf3</text>
+<text x="559" y="856" fill="#eff5ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Nc6</text>
+<text x="390" y="896" fill="#a0b5ca" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">3.</text>
+<text x="448" y="896" fill="#eff5ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Bc4</text>
+<text x="559" y="896" fill="#eff5ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Nf6</text>
+<text x="390" y="936" fill="#a0b5ca" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">4.</text>
+<rect x="440" y="913" width="97" height="30" rx="4" fill="#1665bf" />
+<text x="448" y="936" fill="#eff5ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">d3</text>
+<text x="559" y="936" fill="#eff5ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start"></text>
+<rect x="686" y="753" width="468" height="230" rx="7" fill="url(#panel)" stroke="#27394c" stroke-width="1"/>
+<text x="701" y="781" fill="#f6f8ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">Evaluation Graph</text>
+<line x1="687" y1="795" x2="1153" y2="795" stroke="#26384b" stroke-width="1"/>
+<line x1="734" y1="812" x2="1136" y2="812" stroke="#26384a" stroke-width="1"/>
+<line x1="734" y1="845" x2="1136" y2="845" stroke="#26384a" stroke-width="1"/>
+<line x1="734" y1="878" x2="1136" y2="878" stroke="#26384a" stroke-width="1"/>
+<line x1="734" y1="911" x2="1136" y2="911" stroke="#26384a" stroke-width="1"/>
+<line x1="734" y1="944" x2="1136" y2="944" stroke="#26384a" stroke-width="1"/>
+<line x1="734" y1="809" x2="734" y2="947" stroke="#1e3143" stroke-width="1"/>
+<line x1="791.4" y1="809" x2="791.4" y2="947" stroke="#1e3143" stroke-width="1"/>
+<line x1="848.8" y1="809" x2="848.8" y2="947" stroke="#1e3143" stroke-width="1"/>
+<line x1="906.2" y1="809" x2="906.2" y2="947" stroke="#1e3143" stroke-width="1"/>
+<line x1="963.6" y1="809" x2="963.6" y2="947" stroke="#1e3143" stroke-width="1"/>
+<line x1="1021" y1="809" x2="1021" y2="947" stroke="#1e3143" stroke-width="1"/>
+<line x1="1078.4" y1="809" x2="1078.4" y2="947" stroke="#1e3143" stroke-width="1"/>
+<line x1="1135.8" y1="809" x2="1135.8" y2="947" stroke="#1e3143" stroke-width="1"/>
+<text x="704" y="817" fill="#8ba6be" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="start">+2</text>
+<text x="704" y="883" fill="#8ba6be" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="start">0</text>
+<text x="704" y="949" fill="#8ba6be" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="start">-2</text>
+<path d="M734 884 C750 884 763 885 774 882 S804 875 820 875 S850 868 866 871 S887 865 902 870 S931 860 954 864 S991 848 1010 857 S1033 838 1050 847 S1071 835 1090 838 S1117 831 1136 825" fill="none" stroke="#dae6f6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="993" y1="811" x2="993" y2="947" stroke="#278dff" stroke-width="2"/>
+<rect x="988" y="848" width="10" height="10" rx="5" fill="#2d91ff" />
+<rect x="1167" y="753" width="351" height="230" rx="7" fill="url(#panel)" stroke="#27394c" stroke-width="1"/>
+<text x="1182" y="781" fill="#f6f8ff" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">Training / Dataset</text>
+<text x="1502" y="780" fill="#7f99b6" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="400" text-anchor="end">FUTURE FEATURE</text>
+<line x1="1168" y1="795" x2="1517" y2="795" stroke="#26384b" stroke-width="1"/>
+<text x="1183" y="810" fill="#b6cdef" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start">▦</text>
+<text x="1211" y="810" fill="#e1eaf7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start">Import PGN…</text>
+<line x1="1184" y1="818" x2="1496" y2="818" stroke="#182c3e" stroke-width="1"/>
+<text x="1183" y="839" fill="#b6cdef" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start">◫</text>
+<text x="1211" y="839" fill="#e1eaf7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start">Load Game for Training</text>
+<line x1="1184" y1="847" x2="1496" y2="847" stroke="#182c3e" stroke-width="1"/>
+<text x="1183" y="868" fill="#b6cdef" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start">⚙</text>
+<text x="1211" y="868" fill="#e1eaf7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start">Generate Training Data</text>
+<line x1="1184" y1="876" x2="1496" y2="876" stroke="#182c3e" stroke-width="1"/>
+<text x="1183" y="897" fill="#b6cdef" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start">↺</text>
+<text x="1211" y="897" fill="#e1eaf7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start">Self-Play Training</text>
+<line x1="1184" y1="905" x2="1496" y2="905" stroke="#182c3e" stroke-width="1"/>
+<text x="1183" y="926" fill="#b6cdef" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start">▣</text>
+<text x="1211" y="926" fill="#e1eaf7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start">Open Training Folder</text>
+<line x1="1184" y1="934" x2="1496" y2="934" stroke="#182c3e" stroke-width="1"/>
+<text x="1183" y="955" fill="#b6cdef" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start">◎</text>
+<text x="1211" y="955" fill="#e1eaf7" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="start">Model Management</text>
+<rect x="0" y="992" width="1536" height="32" rx="0" fill="#101a26" />
+<line x1="0" y1="992" x2="1536" y2="992" stroke="#25394c" stroke-width="1"/>
+<rect x="19" y="1002" width="12" height="12" rx="6" fill="#4cc56c" />
+<text x="44" y="1014" fill="#b4c9de" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="400" text-anchor="start">SASD-AI-Chess · UI concept (not implemented)</text>
+<text x="830" y="1014" fill="#adc4da" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="400" text-anchor="start">Illustrative game  ·  White to move  ·  Values simulated</text>
+<text x="1508" y="1014" fill="#a6bad1" font-family="Segoe UI,DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="400" text-anchor="end">C++20 / UCI / NNUE – planned</text>
+</svg>
